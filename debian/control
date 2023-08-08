@@ -1,15 +1,21 @@
-Source: template-repository
-Section: unknown
+Source: golang-github-lionsoul2014-ip2region-v1.0-binding-golang-ip2region
+Section: devel
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
+Maintainer: Chang Yang <yangchang@deepin.org>
+Build-Depends: debhelper (>= 11),
+               dh-golang,
+               golang-any
 Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Homepage: https://github.com/lionsoul2014/ip2region
+Vcs-Browser: https://github.com/lionsoul2014/ip2region
+Vcs-Git: https://github.com/lionsoul2014/ip2region.git
+XS-Go-Import-Path: github.com/lionsoul2014/ip2region/v1.0/binding/golang/ip2region
+Testsuite: autopkgtest-pkg-go
 
-Package: template-repository
+Package: golang-github-lionsoul2014-ip2region-v1.0-binding-golang-ip2region-dev
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Multi-Arch: foreign
+Description: a offline IP address manager framework and locator
+ support billions of data segments, ten microsecond searching performance.
+ xdb engine implementation for many programming languages
